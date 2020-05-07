@@ -7,9 +7,15 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Welcome to the flutter '),
+    return MaterialApp(
+      title: 'Hello ',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to the flutter '),
+        ),
+        body: Center(
+          child: Text('Welcome to flutter world'),
+        ),
       ),
     );
   }
